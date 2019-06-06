@@ -1,3 +1,11 @@
+from languages import languages
+
+def _get_languages():
+    lang = list()
+    for l in languages.keys():
+        lang.append((l, languages[l][0]))
+    return lang
+
 contact_elements = {
 
     "role": {
@@ -220,10 +228,7 @@ elements = {
         "path": "dataIdInfo/dataLang/languageCode",
         "type": "attribute",
         "key": "value",
-        "values": [("english", "eng"),
-                   ("spanish", "spa"),
-                   ("french", "fre"),
-                   ("georgian", "geo")]
+        "values": _get_languages()
     },
 
     "last_update": {
@@ -255,10 +260,7 @@ elements = {
         "path": "dataIdInfo/mdLang/languageCode",
         "type": "attribute",
         "key": "value",
-        "values": [("english", "eng"),
-                   ("spanish", "spa"),
-                   ("french", "fre"),
-                   ("georgian", "geo")]
+        "values": _get_languages()
     },
 
     "meta_style": {
@@ -375,3 +377,5 @@ elements = {
         "type": "string"}
 
 }
+
+
