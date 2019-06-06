@@ -222,7 +222,8 @@ elements = {
         "key": "value",
         "values": [("english", "eng"),
                    ("spanish", "spa"),
-                   ("french", "fre")]
+                   ("french", "fre"),
+                   ("georgian", "geo")]
     },
 
     "last_update": {
@@ -256,7 +257,8 @@ elements = {
         "key": "value",
         "values": [("english", "eng"),
                    ("spanish", "spa"),
-                   ("french", "fre")]
+                   ("french", "fre"),
+                   ("georgian", "geo")]
     },
 
     "meta_style": {
