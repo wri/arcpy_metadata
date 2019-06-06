@@ -134,7 +134,7 @@ class MetadataEditor(object):
 
         elif self.metadata_file:  # Check if metadata file is set instead
             self.data_type = 'MetadataFile'
-            if self.metadata_file.endswith('.xml') or os.path.isfile(self.metadata_file):
+            if self.metadata_file.endswith('.xml'):
                 if not os.path.exists(self.metadata_file):
                     self._create_xml_file(self.metadata_file)
                 self._workspace_type = 'FileSystem'
