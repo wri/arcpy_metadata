@@ -236,11 +236,11 @@ elements = {
         "type": "datetime"},
 
     "license": {
-        "path": "dataIdInfo/resConst/LegConsts/useLimit",
+        "path": "dataIdInfo/resConst/Consts/useLimit",
         "type": "string"},
 
-    "limitation": {  #TODO: does read correctly when entered though ArcGIS Online. They are stored in a seperated resConst element
-        "path": "dataIdInfo/resConst/Consts/useLimit",
+    "limitation": {
+        "path": "dataIdInfo/idSpecUse/usrDetLim",
         "type": "string"},
 
     #"locals": {
